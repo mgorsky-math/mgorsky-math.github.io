@@ -109,7 +109,8 @@ const preprints = [
   {
     title:
       "An Erdős–Pósa Theorem for Cycles and Faces of Distinct Lengths",
-    detail: "with J. Pascal Gollin, Meike Hatzel, Kevin Hendrey et al.",
+    detail:
+      "with J. Pascal Gollin, Meike Hatzel, Kevin Hendrey, Tony Huynh, Caleb McFarland, Marek Sokołowski, Sebastian Wiederrecht, and Paul Wollan",
     href: "https://arxiv.org/abs/2607.06869",
   },
   {
@@ -164,7 +165,7 @@ const coauthors: Array<{ name: string; href?: string; papers?: number }> = [
     name: "Ken-ichi Kawarabayashi",
     href: "https://research.nii.ac.jp/~k_keniti/",
   },
-  { name: "Gunwoo Kim" },
+  { name: "Gunwoo Kim", href: "https://k-gunwoo.github.io/" },
   { name: "Fabian Kreßin" },
   {
     name: "Stephan Kreutzer",
