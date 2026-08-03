@@ -107,6 +107,7 @@ const publications = [
 
 const preprints = [
   {
+    year: "2026",
     title:
       "An Erdős–Pósa Theorem for Cycles and Faces of Distinct Lengths",
     detail:
@@ -114,17 +115,20 @@ const preprints = [
     href: "https://arxiv.org/abs/2607.06869",
   },
   {
+    year: "2026",
     title:
       "The Erdős–Pósa Property for Prime-Length Cycles Fails (and Beyond)",
     detail: "with Kevin Hendrey and Tony Huynh",
     href: "https://arxiv.org/abs/2605.04938",
   },
   {
+    year: "2026",
     title: "On Non-Planar, Cycle-Conformal Graphs",
     detail: "with Clemens Kuske",
     href: "https://arxiv.org/abs/2602.07331",
   },
   {
+    year: "2021",
     title: "Posets with k-outerplanar Cover Graphs Have Bounded Dimension",
     detail: "with Michał Seweryn",
     href: "https://arxiv.org/abs/2103.15920",
@@ -132,7 +136,10 @@ const preprints = [
 ];
 
 const coauthors: Array<{ name: string; href?: string; papers?: number }> = [
-  { name: "Dario Cavallaro" },
+  {
+    name: "Dario Cavallaro",
+    href: "https://www.tu.berlin/en/las/team/research-staff/dario-cavallaro",
+  },
   { name: "Mujin Choi", href: "https://dimag.ibs.re.kr/home/mujin/" },
   {
     name: "Katie Clinch",
@@ -156,7 +163,10 @@ const coauthors: Array<{ name: string; href?: string; papers?: number }> = [
     href: "https://sites.google.com/site/matroidintersection/",
     papers: 3,
   },
-  { name: "Theresa Johanni" },
+  {
+    name: "Theresa Johanni",
+    href: "https://de.linkedin.com/in/theresa-johanni-51876921a/en",
+  },
   {
     name: "Eleftherios Kastis",
     href: "https://www.lancaster.ac.uk/maths/people/lefteris-kastis",
@@ -166,13 +176,16 @@ const coauthors: Array<{ name: string; href?: string; papers?: number }> = [
     href: "https://research.nii.ac.jp/~k_keniti/",
   },
   { name: "Gunwoo Kim", href: "https://k-gunwoo.github.io/" },
-  { name: "Fabian Kreßin" },
+  { name: "Fabian Kreßin", href: "https://fabiankressin.com/" },
   {
     name: "Stephan Kreutzer",
     href: "https://www.tu.berlin/en/las/team/research-group-leader/kreutzer",
     papers: 3,
   },
-  { name: "Clemens Kuske" },
+  {
+    name: "Clemens Kuske",
+    href: "https://de.linkedin.com/in/clemens-kuske-0544a2217",
+  },
   {
     name: "Caleb McFarland",
     href: "https://sites.google.com/view/caleb-mcfarland/",
@@ -403,9 +416,16 @@ export default function Home() {
               </div>
               <div className="preprint-list">
                 {preprints.map((preprint) => (
-                  <a href={preprint.href} key={preprint.title}>
-                    <strong>{preprint.title}</strong>
-                    <span>{preprint.detail}</span>
+                  <a
+                    className="preprint-item"
+                    href={preprint.href}
+                    key={preprint.title}
+                  >
+                    <span className="preprint-year">{preprint.year}</span>
+                    <span className="preprint-main">
+                      <strong>{preprint.title}</strong>
+                      <small>{preprint.detail}</small>
+                    </span>
                     <Arrow />
                   </a>
                 ))}

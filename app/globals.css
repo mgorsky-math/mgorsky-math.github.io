@@ -565,31 +565,34 @@ p {
   border-top: 1px solid var(--line);
 }
 
-.preprint-list a {
+.preprint-item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 28px;
+  grid-template-columns: 60px minmax(0, 1fr) 28px;
+  gap: 25px;
+  align-items: center;
   padding: 21px 0;
   border-bottom: 1px solid var(--line);
 }
 
-.preprint-list strong,
-.preprint-list span {
+.preprint-main strong,
+.preprint-main small {
   display: block;
 }
 
-.preprint-list strong {
+.preprint-year {
+  color: var(--accent-strong);
+  font-family: var(--serif);
+  font-size: 15px;
+}
+
+.preprint-main strong {
   font-size: 14px;
 }
 
-.preprint-list span:not(:last-child) {
+.preprint-main small {
   margin-top: 5px;
   color: var(--muted);
   font-size: 11px;
-}
-
-.preprint-list > a > span:last-child {
-  grid-column: 2;
-  grid-row: 1 / span 2;
 }
 
 .coauthors-section {
