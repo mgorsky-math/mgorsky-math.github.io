@@ -183,10 +183,10 @@ const workshops = [
     href: "https://sites.google.com/impan.pl/grow2026/home-page",
   },
   {
-    date: "2026",
+    date: "7–10 July 2026",
     name: "ICALP",
     place: "London, United Kingdom",
-    href: "https://icalppodcspaa2026.cs.rhul.ac.uk/",
+    href: "https://icalppodcspaa2026.cs.rhul.ac.uk/icalp/",
   },
   {
     date: "13–24 April 2026",
@@ -201,10 +201,10 @@ const workshops = [
     href: "https://dimag.ibs.re.kr/event/2025-east-asia-graph-theory/",
   },
   {
-    date: "2025",
+    date: "14–17 December 2025",
     name: "FOCS",
     place: "Sydney, Australia",
-    href: "https://focs.computer.org/",
+    href: "https://focs.computer.org/2025/",
   },
   {
     date: "19–21 November 2025",

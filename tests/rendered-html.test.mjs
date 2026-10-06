@@ -122,5 +122,7 @@ test("server-renders the full activities page", async () => {
   assert.match(html, /Georgia Tech/);
   assert.match(html, /27 June–04 July 2026/);
   assert.match(html, /Research visit · Host: Rose McCarty/);
+  assert.match(html, /7–10 July 2026/);
+  assert.match(html, /14–17 December 2025/);
   assert.doesNotMatch(html, /A selection of recent and upcoming/);
 });

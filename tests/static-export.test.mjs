@@ -20,6 +20,8 @@ test("GitHub Pages export contains both website routes", async () => {
   assert.match(activities, /Talks, visits &amp; workshops/);
   assert.match(activities, /27 June–04 July 2026/);
   assert.match(activities, /Research visit · Host: Rose McCarty/);
+  assert.match(activities, /7–10 July 2026/);
+  assert.match(activities, /14–17 December 2025/);
 });
 
 test("GitHub Pages export includes the required image assets", async () => {
