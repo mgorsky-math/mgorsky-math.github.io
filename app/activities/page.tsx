@@ -14,10 +14,10 @@ const visits = [
     href: "https://www.tu.berlin/en/las/team/research-group-leader/kreutzer",
   },
   {
-    date: "July 2026",
+    date: "27 June–04 July 2026",
     name: "Georgia Tech",
-    detail: "Research visit · Atlanta, United States",
-    href: "https://www.gatech.edu/",
+    detail: "Research visit · Host: Rose McCarty",
+    href: "https://mccarty.math.gatech.edu/",
   },
   {
     date: "17–18 November 2025",

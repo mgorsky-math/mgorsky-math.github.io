@@ -34,10 +34,13 @@ test("server-renders Maximilian Gorsky's academic website", async () => {
   );
   assert.match(html, /Research on the<em> structure of graphs\.<\/em>/);
   assert.match(html, /Computer Scientist · Mathematician/);
+  assert.match(html, /href="\/Maximilian-Gorsky-CV\.pdf" download=""/);
   assert.doesNotMatch(html, /I study the hidden/);
   assert.match(html, /Publications/);
   assert.match(html, /Optimal Bounds for the k-Disjoint Paths Problem/);
   assert.match(html, /Strongly Pfaffian Graphs/);
+  assert.match(html, /The Structure of \(Even\) Directed Cycles/);
+  assert.match(html, /10\.14279\/depositonce-21276/);
   assert.match(html, /10\.1007\/978-3-030-83823-2_42/);
   assert.match(html, /IBS Researcher of the Year/);
   assert.match(html, /Graph theory, in progress\./);
@@ -117,5 +120,7 @@ test("server-renders the full activities page", async () => {
   assert.match(html, /Barbados Graph Theory Workshop/);
   assert.match(html, /k-Outerplanarity and Poset Dimension/);
   assert.match(html, /Georgia Tech/);
+  assert.match(html, /27 June–04 July 2026/);
+  assert.match(html, /Research visit · Host: Rose McCarty/);
   assert.doesNotMatch(html, /A selection of recent and upcoming/);
 });

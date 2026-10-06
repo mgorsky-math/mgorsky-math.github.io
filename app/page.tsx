@@ -128,6 +128,12 @@ const preprints = [
     href: "https://arxiv.org/abs/2602.07331",
   },
   {
+    year: "2024",
+    title: "The Structure of (Even) Directed Cycles",
+    detail: "PhD thesis · Technische Universität Berlin",
+    href: "https://doi.org/10.14279/depositonce-21276",
+  },
+  {
     year: "2021",
     title: "Posets with k-outerplanar Cover Graphs Have Bounded Dimension",
     detail: "with Michał Seweryn",
@@ -284,6 +290,13 @@ export default function Home() {
                 </a>
                 <a className="text-action" href="mailto:m.gorsky@pm.me">
                   m.gorsky@pm.me
+                </a>
+                <a
+                  className="text-action"
+                  href="/Maximilian-Gorsky-CV.pdf"
+                  download
+                >
+                  Download CV (PDF)
                 </a>
               </div>
             </div>
